@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#fff12f</color>
+    <color name="colorBackground">#eee0bd</color>
+    <color name="myBlueSkyColor">#8AD5F0</color>
+    <color name="myGrayBg">#E2EBE1</color>
+    <color name="myGreenColor">#15FF00</color>
+    <color name="timeLineColor">#75D9FA</color>
+    <color name="weekdays_color">#FFA3E6FC</color>
+    <color name="hours_color">#F5F5F5</color>
+    <color name="timeWeekColor">#75D9FA</color>
+    <color name="breakColor">#FFFFFF</color>
+    <color name="breakTextColor">#41F72D</color>
+</resources>

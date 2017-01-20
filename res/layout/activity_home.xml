@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="thedebuggers.api_maps.Home">
+    <FrameLayout
+        android:id="@+id/FragmentContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to List"
+        android:id="@+id/button"
+        android:layout_marginTop="175dp"
+        android:layout_below="@+id/FragmentContainer"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

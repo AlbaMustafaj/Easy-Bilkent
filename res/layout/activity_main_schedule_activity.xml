@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MyScheduleActivity"
+    android:touchscreenBlocksFocus="false"
+    android:theme="@android:style/Theme"
+    android:paddingBottom="0dp"
+    android:minHeight="400dp">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:text="Weekly Schedule"
+        android:visibility="visible"
+        android:gravity="center"
+        android:textColor="#f20707" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:id="@+id/grid1"
+        android:verticalSpacing="4dp"
+        android:horizontalSpacing="4dp"
+        android:numColumns="6"
+        android:layout_weight="1.65"
+        android:smoothScrollbar="true"
+        android:visibility="visible">
+    </GridView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_edit" />
+
+    <RelativeLayout
+        android:id="@+id/On_Screen_Editor_Layout"
+        android:layout_width="391dp"
+        android:layout_height="150dp"
+        android:background="@android:color/white"
+        android:focusable="false"
+        android:visibility="gone"
+        android:layout_weight="0.16">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="270dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="261dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:id="@+id/ClassLinearLayout"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="@string/class_text"
+                    android:background="@color/myBlueSkyColor"
+                    android:textColor="#0d0101"
+                    android:id="@+id/class_text"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="5dp"
+                    android:textAlignment="center" />
+
+                <EditText
+                android:layout_width="200dp"
+                android:id="@+id/edit_class_name"
+                android:inputType="text"
+                android:layout_height="30dp"
+                    android:textSize="11sp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="261dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:id="@+id/BuildingLinearLayout"
+                android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:visibility="visible"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:textIsSelectable="false"
+                android:textColor="#e14141"
+                android:text="@string/building_text"
+                android:background="@color/myBlueSkyColor"
+                android:id="@+id/building_text_id"
+                android:layout_gravity="left"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/edit_building_name"
+                android:inputType="text"
+                android:textSize="11sp"
+                android:textAlignment="center" />
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="261dp"
+                android:layout_height="30dp"
+                android:id="@+id/TeacherLinearLayout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="@string/teacher_name__string"
+                    android:id="@+id/teacher_text"
+                    android:background="#a3e5eb"
+                    android:textColor="#061bde"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="5dp"
+                    android:textAlignment="center" />
+
+                <EditText
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/edit_teacher_name"
+                android:inputType="text"
+                    android:textSize="11sp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="141dp"
+                android:layout_height="40dp"
+                android:onClick="buttonSave"
+                android:text="Save"
+                android:id="@+id/saveButton"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="left|bottom" />
+            <Button
+                android:layout_width="141dp"
+                android:layout_height="40dp"
+                android:onClick="cancelEdit"
+                android:text="Cancel"
+                android:id="@+id/cancelButton"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="110dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+</ScrollView>
+
